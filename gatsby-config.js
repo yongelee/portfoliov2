@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Yongelee | Developer / Designer',
+    description: 'The portfolio website for Yongelee.',
+    author: 'Yongelee',
   },
   plugins: [
     `gatsby-plugin-styled-components`,

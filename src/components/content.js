@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react'
 import styled from 'styled-components'
+import { Link } from 'gatsby'
 import { TimelineMax, TweenLite, Power4 } from 'gsap'
 import ScrollMagic from 'ScrollMagic'
 import me from '../assets/me.png'
 import { WorkSection } from './WorkSection'
+import roadto4k from '../assets/roadto4k.png'
 
 import apollo from '../assets/apollo.svg'
 import aws from '../assets/aws.svg'
@@ -14,6 +16,7 @@ import javascript from '../assets/javascript.svg'
 import node from '../assets/node.svg'
 import react from '../assets/react.svg'
 import email from '../assets/email.svg'
+import matrix from '../assets/matrix.gif'
 
 require('animation.gsap')
 require('debug.addIndicators')
@@ -388,19 +391,19 @@ const Content = () => {
       .setTween(animateIn3)
       .addTo(controller)
 
-    const animate4 = new TimelineMax()
-    animate4.from('.more-work-trigger', 0.3, {
-      autoAlpha: 0,
-      y: 30,
-      ease: Power4.easeOut,
-    })
+    // const animate4 = new TimelineMax()
+    // animate4.from('.more-work-trigger', 0.3, {
+    //   autoAlpha: 0,
+    //   y: 30,
+    //   ease: Power4.easeOut,
+    // })
 
-    var scene7 = new ScrollMagic.Scene({
-      triggerElement: '.more-work-trigger',
-      triggerHook: 1,
-    })
-      .setTween(animate4)
-      .addTo(controller)
+    // var scene7 = new ScrollMagic.Scene({
+    //   triggerElement: '.more-work-trigger',
+    //   triggerHook: 1,
+    // })
+    //   .setTween(animate4)
+    //   .addTo(controller)
 
     const animate5 = new TimelineMax()
     animate5
@@ -437,7 +440,6 @@ const Content = () => {
 
     var scene8 = new ScrollMagic.Scene({
       triggerElement: '.skills-trigger',
-      triggerHook: 1,
     })
       .setTween(animate5)
       .addTo(controller)
@@ -506,14 +508,18 @@ const Content = () => {
         <section>
           <div className="grid-container project2 project-right">
             <div className="box2">
-              <img src="https://source.unsplash.com/71vAb1FXB6g" alt="" />
+              <img src={roadto4k} alt="" />
               <div className="overlay2" />
             </div>
             <div className="project-info2">
               <p className="small-title2">React // Node // GraphQL // AWS</p>
               <h4 className="title2">RoadTo4k.com</h4>
-              <a href="#" className="project-link2">
-                See the case study
+              <a
+                href="https://roadto4k.com"
+                target="_blank"
+                className="project-link2"
+              >
+                View it
               </a>
             </div>
           </div>
@@ -522,24 +528,24 @@ const Content = () => {
         <section>
           <div className="grid-container project3 project-left">
             <div className="box3">
-              <img src="https://source.unsplash.com/71vAb1FXB6g" alt="" />
+              <img src={matrix} alt="" />
               <div className="overlay3" />
             </div>
             <div className="project-info3">
               <p className="small-title3">CSS // Animation // Keyframes</p>
               <h4 className="title3">Matrix Rain Animation</h4>
-              <a href="#" className="project-link3">
-                See the case study
-              </a>
+              <Link to="/matrix/" target="_blank" className="project-link3">
+                View it
+              </Link>
             </div>
           </div>
         </section>
 
-        <section>
+        {/* <section>
           <div className="more-work-trigger">
-            <a href="#">See my work page:</a>
+            <Link to="/work/">See my work page:</Link>
           </div>
-        </section>
+        </section> */}
       </WorkSection>
 
       <SkillSection>

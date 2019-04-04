@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Intro from '../components/intro'
 import Content from '../components/content'
+import SEO from '../components/seo'
 
 const IntroCont = styled.div`
   position: fixed;
@@ -32,6 +33,7 @@ const ContentCont = styled.div`
 
 const IndexPage = () => (
   <div>
+    <SEO title="Intro" />
     <IntroCont>
       <Intro />
     </IntroCont>
