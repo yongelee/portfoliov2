@@ -8,6 +8,21 @@ exports.onCreateWebpackConfig = ({
   actions,
 }) => {
   actions.setWebpackConfig({
+    module: {
+      rules:
+        stage === 'build-html'
+          ? [
+              {
+                test: /ScrollMagic/,
+                use: loaders.null(),
+              },
+              {
+                test: /scrollmagic/,
+                use: loaders.null(),
+              },
+            ]
+          : [],
+    },
     resolve: {
       alias: {
         TweenLite: Path.resolve(
