@@ -497,7 +497,7 @@ const Content = () => {
               <div className="overlay" />
             </div>
             <div className="project-info">
-              <p className="small-title">React // Node // GraphQL // AWS</p>
+              <p className="small-title">React // Node // GraphQL // Digital Ocean</p>
               <h4 className="title">RealPropertyNumbers.com</h4>
               <a
                 href="https://realpropertynumbers.com"
@@ -517,7 +517,7 @@ const Content = () => {
               <div className="overlay2" />
             </div>
             <div className="project-info2">
-              <p className="small-title2">React // Node // GraphQL // AWS</p>
+              <p className="small-title2">React // Node // GraphQL // Heroku</p>
               <h4 className="title2">RoadTo4k.com</h4>
               <a
                 href="https://roadto4k.herokuapp.com/"
