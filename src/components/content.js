@@ -17,6 +17,7 @@ import node from '../assets/node.svg'
 import react from '../assets/react.svg'
 import email from '../assets/email.svg'
 import matrix from '../assets/matrix.gif'
+import rpn from '../assets/rpn.png'
 
 require('animation.gsap')
 require('debug.addIndicators')
@@ -492,13 +493,17 @@ const Content = () => {
         <section>
           <div className="grid-container project project-left">
             <div className="box">
-              <img src="https://source.unsplash.com/71vAb1FXB6g" alt="" />
+              <img src={rpn} alt="" />
               <div className="overlay" />
             </div>
             <div className="project-info">
               <p className="small-title">React // Node // GraphQL // AWS</p>
               <h4 className="title">RealPropertyNumbers.com</h4>
-              <a href="#" className="project-link">
+              <a
+                href="https://realpropertynumbers.com"
+                target="_blank"
+                className="project-link"
+              >
                 See the case study
               </a>
             </div>
@@ -515,7 +520,7 @@ const Content = () => {
               <p className="small-title2">React // Node // GraphQL // AWS</p>
               <h4 className="title2">RoadTo4k.com</h4>
               <a
-                href="https://roadto4k.com"
+                href="https://roadto4k.herokuapp.com/"
                 target="_blank"
                 className="project-link2"
               >
