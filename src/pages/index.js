@@ -11,10 +11,9 @@ const IntroCont = styled.div`
   max-width: 100%;
   background-color: #272727;
   display: flex;
-  -webkit-box-shadow: inset 0px 0px 82px 0px rgba(255, 198, 0, 0.3);
-  -moz-box-shadow: inset 0px 0px 82px 0px rgba(255, 198, 0, 0.3);
-  box-shadow: inset 0px 0px 82px 0px rgba(255, 198, 0, 0.3);
-
+  -webkit-box-shadow: inset -10px 0px 82px 0px rgba(255, 198, 0, 0.3);
+  -moz-box-shadow: inset -10px 0px 82px 0px rgba(255, 198, 0, 0.3);
+  box-shadow: inset -10px 0px 82px 0px rgba(255, 198, 0, 0.3);
   /* @media (max-width: 700px) {
     -webkit-box-shadow: unset;
     -moz-box-shadow: unset;
@@ -29,19 +28,48 @@ const ContentCont = styled.div`
   justify-content: center;
   background-color: transparent;
   z-index: 20;
+  display: flex;
+  flex-direction: column;
 `
-
+/**
+ * Have to fix the positioning of these text elements
+ * and make it so its scrollable and can put in
+ * new content below it without having to overlay something
+ */
 const IndexPage = () => (
-  <div>
-    <SEO title="Intro" />
-    <IntroCont>
-      <Intro />
-    </IntroCont>
-    <ContentCont>
-      <Content />
-    </ContentCont>
-    {/* <IntroCont /> */}
-  </div>
+  <p>not yet</p>
+  // <div>
+  //   <SEO title="Intro" />
+  //   <IntroCont>
+  //     <Intro />
+  //   </IntroCont>
+  //   <ContentCont>
+  //     <p>hi</p>
+  //     <p>hi</p>
+  //     <p>hi</p>
+  //     <p>hi</p>
+  //     <p>hi</p>
+  //     <p>hi</p>
+  //     <p>hi</p>
+  //     <p>hi</p>
+  //     <p>hi</p>
+  //     <p>hi</p>
+  //     <p>hi</p>
+  //     <p>hi</p>
+  //     <p>hi</p>
+  //     <p>hi</p>
+  //     <p>hi</p>
+  //     <p>hi</p>
+  //     <p>hi</p>
+  //     <p>hi</p>
+  //     <p>hi</p>
+  //     <p>hi</p>
+  //     <p>hi</p>
+  //     <p>hi</p>
+  //     {/* <Content /> */}
+  //   </ContentCont>
+  //   {/* <IntroCont /> */}
+  // </div>
 )
 
 export default IndexPage
