@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import Intro from '../components/intro'
 import Content from '../components/content'
@@ -30,46 +30,51 @@ const ContentCont = styled.div`
   z-index: 20;
   display: flex;
   flex-direction: column;
+
+  .contentindex {
+    width: 100%;
+    background: #272727;
+    padding: 4rem;
+    p {
+      text-align: center;
+      font-size: 3rem;
+      color: #ffc600;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .contentindex {
+      padding: 2rem;
+      p {
+        font-size: 1.5rem;
+      }
+    }
+  }
 `
 /**
  * Have to fix the positioning of these text elements
  * and make it so its scrollable and can put in
  * new content below it without having to overlay something
  */
-const IndexPage = () => (
-  <p>not yet</p>
-  // <div>
-  //   <SEO title="Intro" />
-  //   <IntroCont>
-  //     <Intro />
-  //   </IntroCont>
-  //   <ContentCont>
-  //     <p>hi</p>
-  //     <p>hi</p>
-  //     <p>hi</p>
-  //     <p>hi</p>
-  //     <p>hi</p>
-  //     <p>hi</p>
-  //     <p>hi</p>
-  //     <p>hi</p>
-  //     <p>hi</p>
-  //     <p>hi</p>
-  //     <p>hi</p>
-  //     <p>hi</p>
-  //     <p>hi</p>
-  //     <p>hi</p>
-  //     <p>hi</p>
-  //     <p>hi</p>
-  //     <p>hi</p>
-  //     <p>hi</p>
-  //     <p>hi</p>
-  //     <p>hi</p>
-  //     <p>hi</p>
-  //     <p>hi</p>
-  //     {/* <Content /> */}
-  //   </ContentCont>
-  //   {/* <IntroCont /> */}
-  // </div>
-)
+const IndexPage = () => {
+  const [intro, setIntro] = useState([
+    'Hi thanks for visitng my site',
+    'this is who i am.',
+  ])
 
+  return (
+    <div>
+      <SEO title="Intro" />
+      <IntroCont>
+        <Intro />
+      </IntroCont>
+      <ContentCont>
+        <div className="contentindex">
+          {intro.map((txt, i) => <p key={i}>{txt}</p>)}
+        </div>
+        {/* <Content /> */}
+      </ContentCont>
+    </div>
+  )
+}
 export default IndexPage

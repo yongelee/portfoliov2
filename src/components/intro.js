@@ -122,25 +122,26 @@ const Intro = () => {
           <Box>{animateLetter(7, 'E')}</Box>
         </BoxCont>
         <BoxCont top={`45%`} topMobile={`40%`} left={`2.5rem`}>
-          <Box>{animateLetter2(8, 'D')}</Box>
-          <Box>{animateLetter2(9, 'E')}</Box>
-          <Box>{animateLetter2(10, 'S')}</Box>
-          <Box>{animateLetter2(11, 'I')}</Box>
-          <Box>{animateLetter2(12, 'G')}</Box>
-          <Box>{animateLetter2(13, 'N')}</Box>
-          <Box>{animateLetter2(14, 'E')}</Box>
-          <Box>{animateLetter2(15, 'R')}</Box>
+          <Box>{animateLetter2(8, 'F')}</Box>
+          <Box>{animateLetter2(9, 'U')}</Box>
+          <Box>{animateLetter2(10, 'L')}</Box>
+          <Box>{animateLetter2(11, 'L')}</Box>
+          <Box>{animateLetter2(12, 'S')}</Box>
+          <Box>{animateLetter2(13, 'T')}</Box>
+          <Box>{animateLetter2(14, 'A')}</Box>
+          <Box>{animateLetter2(15, 'C')}</Box>
+          <Box>{animateLetter2(16, 'K')}</Box>
         </BoxCont>
         <BoxCont top={`55%`} topMobile={`50%`} left={`1.5rem`}>
-          <Box>{animateLetter3(16, 'D')}</Box>
-          <Box>{animateLetter3(17, 'E')}</Box>
-          <Box>{animateLetter3(18, 'V')}</Box>
-          <Box>{animateLetter3(19, 'E')}</Box>
-          <Box>{animateLetter3(20, 'L')}</Box>
-          <Box>{animateLetter3(21, 'O')}</Box>
-          <Box>{animateLetter3(22, 'P')}</Box>
-          <Box>{animateLetter3(23, 'E')}</Box>
-          <Box>{animateLetter3(24, 'R')}</Box>
+          <Box>{animateLetter3(17, 'D')}</Box>
+          <Box>{animateLetter3(18, 'E')}</Box>
+          <Box>{animateLetter3(19, 'V')}</Box>
+          <Box>{animateLetter3(20, 'E')}</Box>
+          <Box>{animateLetter3(21, 'L')}</Box>
+          <Box>{animateLetter3(22, 'O')}</Box>
+          <Box>{animateLetter3(23, 'P')}</Box>
+          <Box>{animateLetter3(24, 'E')}</Box>
+          <Box>{animateLetter3(25, 'R')}</Box>
         </BoxCont>
         <ScrollAnimation />
       </Wrapper>
